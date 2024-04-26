@@ -15,9 +15,7 @@ public abstract class Provider {
     
     @Override
     public String toString() {
-        String[] classRoute = getClass().getName().split("\\.");
-        String className = classRoute[classRoute.length - 1];
-        return className;
+        return getClass().getSimpleName();
     }
     
 }

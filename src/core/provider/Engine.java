@@ -21,9 +21,7 @@ public abstract class Engine {
     
     @Override
     public String toString() {
-        String[] classRoute = getClass().getName().split("\\.");
-        String className = classRoute[classRoute.length - 1];
-        return className + "(" + weight + ", " + cost + ")";
+        return getClass().getSimpleName() + "(" + weight + ", " + cost + ")";
     }
     
 }

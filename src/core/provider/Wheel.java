@@ -21,9 +21,7 @@ public abstract class Wheel {
 
     @Override
     public String toString() {
-        String[] classRoute = getClass().getName().split("\\.");
-        String className = classRoute[classRoute.length - 1];
-        return className + "(" + radius + ", " + material + ")";
+        return getClass().getSimpleName() + "(" + radius + ", " + material + ")";
     }
 
     public double getRadius() {
